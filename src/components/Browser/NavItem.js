@@ -1,14 +1,15 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import { ListItem, ListItemText } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingLeft: theme.spacing(5),
   },
   text: {
-    fontWeight: "700",
+    fontSize: "14px",
+    fontWeight: "400",
   },
 }));
 
@@ -27,7 +28,6 @@ const NavItem = ({ label, icon, to, handleClose, external }) => {
 
   return (
     <ListItem button onClick={onClick} className={classes.root}>
-      {!!icon && <ListItemIcon>{icon}</ListItemIcon>}
       <ListItemText
         primary={label}
         classes={{

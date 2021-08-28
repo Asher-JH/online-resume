@@ -8,10 +8,11 @@ import {
 import LinearProgress from "@material-ui/core/LinearProgress";
 
 import Browser from "@components/Browser";
+import LandingPage from "@pages/LandingPage";
 import AboutMe from "@pages/AboutMe";
 import SocialLinks from "@pages/SocialLinks";
 import Gallery from "@pages/Gallery";
-import Contact from '@pages/Contact';
+import Contact from "@pages/Contact";
 import urls from "@vars/urls";
 
 const RootRouter = () => {
@@ -20,6 +21,7 @@ const RootRouter = () => {
       <Browser>
         <Suspense fallback={<LinearProgress />}>
           <Switch>
+            <Route exact path={urls.ROOT} component={LandingPage} />
             <Route exact path={urls.PAGES.ABOUT_ME} component={AboutMe} />
             <Route
               exact

@@ -1,11 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { List } from "@material-ui/core";
-import PersonIcon from "@material-ui/icons/Person";
-import DevicesIcon from "@material-ui/icons/Devices";
-import PhotoSizeSelectActualIcon from "@material-ui/icons/PhotoSizeSelectActual";
-import MailIcon from '@material-ui/icons/Mail';
-import GitHubIcon from "@material-ui/icons/GitHub";
 
 import urls from "@vars/urls";
 
@@ -19,23 +14,19 @@ const useStyles = makeStyles({
 
 const items = [
   {
-    label: "About Me",
-    icon: <PersonIcon />,
+    label: "About",
     to: urls.PAGES.ABOUT_ME,
   },
   {
-    label: "Social Links",
-    icon: <DevicesIcon />,
+    label: "Work",
     to: urls.PAGES.SOCIAL_LINKS,
   },
   {
-    label: "Gallery",
-    icon: <PhotoSizeSelectActualIcon />,
+    label: "Learning",
     to: urls.PAGES.GALLERY,
   },
   {
     label: "Contact",
-    icon: <MailIcon />,
     to: urls.PAGES.CONTACT,
   },
 ];
@@ -54,14 +45,6 @@ const NavList = ({ handleClose }) => {
               {...navProps}
             />
           ))}
-        <NavItem
-          key="sourceCode"
-          handleClose={handleClose}
-          icon={<GitHubIcon />}
-          label="Source code"
-          to="https://github.com/Asher-JH/react-template"
-          external
-        />
       </List>
     </div>
   );
