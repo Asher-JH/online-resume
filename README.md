@@ -1,6 +1,6 @@
-# Reusable React template
+# Online Resume
 
-This template uses 
+This project uses 
 - React JS
 - React-router-dom
 - Material-ui
@@ -15,4 +15,4 @@ Run:
 1. `npm install`
 2. `npm run start`
 
-Last edited: 25/07/2021 - Asher Chan
+Last edited: 28/08/2021 - Asher Chan
