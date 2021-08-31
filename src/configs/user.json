@@ -1,0 +1,38 @@
+{
+  "email": "asherchan2002@hotmail.com",
+  "phone": "016-491 7087",
+  "links": {
+    "github": "https://github.com/Asher-JH",
+    "instagram": "https://www.instagram.com/_asherrrr_/",
+    "linkedIn": "https://www.linkedin.com/in/asher-chan-b667531a6/"
+  },
+  "explore": {
+    "sections": [
+      {
+        "header": "About Me",
+        "subtitle": "Learn more about who I am and my goals in life",
+        "urlName": "ABOUT_ME"
+      },
+      {
+        "header": "Learning Journey",
+        "subtitle": "Some background on my education",
+        "urlName": "GALLERY"
+      },
+      {
+        "header": "My Tools",
+        "subtitle": "All the technologies and productivity tools I use",
+        "urlName": "CONTACT"
+      },
+      {
+        "header": "Projects",
+        "subtitle": "Past, present & future projects of mine",
+        "urlName": "CONTACT"
+      },
+      {
+        "header": "Contact",
+        "subtitle": "Click here to get in touch with me",
+        "urlName": "CONTACT"
+      }
+    ]
+  }
+}

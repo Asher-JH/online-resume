@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
 
+import { THEME_COLORS } from "@vars/colors";
+
 import AppBar from "./AppBar";
 import Drawer from "./Drawer";
 import Footer from "./Footer";
@@ -12,8 +14,8 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
-    minHeight: "92vh",
+    padding: theme.spacing(3, 0),
+    background: THEME_COLORS.WHITE,
 
     "&:before": {
       content: "''",
@@ -21,12 +23,12 @@ const useStyles = makeStyles((theme) => ({
       ...theme.mixins.toolbar,
 
       [theme.breakpoints.up("sm")]: {
-        padding: theme.spacing(5),
+        padding: theme.spacing(3),
       },
     },
   },
   container: {
-    height: "100%",
+    minHeight: "100%",
     margin: 0,
     display: "flex",
     flexDirection: "column",

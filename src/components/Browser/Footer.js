@@ -11,6 +11,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 import { THEME_COLORS } from "@vars/colors";
+import user from "@configs/user.json";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,14 +30,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "start",
   },
-  icon: {
-    color: THEME_COLORS.DARK_GREY,
-  },
 }));
 
 const IconButton = ({ iconName }) => {
-  const classes = useStyles();
   let icon;
+
+  const onClick = () => window.open(user.links[iconName], "_blank");
 
   switch (iconName.toString()) {
     case "github":
@@ -45,7 +44,7 @@ const IconButton = ({ iconName }) => {
     case "instagram":
       icon = <InstagramIcon fontSize="small" />;
       break;
-    case "linkedin":
+    case "linkedIn":
       icon = <LinkedInIcon fontSize="small" />;
       break;
     default:
@@ -53,7 +52,7 @@ const IconButton = ({ iconName }) => {
       break;
   }
 
-  return <MuiIconButton className={classes.icon}>{icon}</MuiIconButton>;
+  return <MuiIconButton onClick={onClick}>{icon}</MuiIconButton>;
 };
 
 const Footer = () => {
@@ -68,7 +67,7 @@ const Footer = () => {
       <div className={classes.container}>
         <IconButton iconName="github" />
         <IconButton iconName="instagram" />
-        <IconButton iconName="linkedin" />
+        <IconButton iconName="linkedIn" />
       </div>
     </Container>
   );

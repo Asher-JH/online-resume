@@ -18,7 +18,7 @@ import urls from "@vars/urls";
 const useStyles = makeStyles((theme) => ({
   root: {
     zIndex: theme.zIndex.drawer + 1,
-    background: "transparent",
+    background: THEME_COLORS.WHITE,
     boxShadow: "none",
     borderBottom: `1px solid ${THEME_COLORS.LIGHT_GREY}`,
   },
@@ -31,12 +31,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     flexGrow: 1,
     textDecoration: "none",
-
-    [theme.breakpoints.down("md")]: {
-      display: "flex",
-      justifyContent: "flex-start",
-      alignItems: "center",
-    },
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
   linksContainer: {
     display: "flex",

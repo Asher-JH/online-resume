@@ -5,7 +5,8 @@
       "@components": ["./components"],
       "@pages": ["./pages"],
       "@assets": ["./assets"],
-      "@vars": ["./vars"]
+      "@vars": ["./vars"],
+      "@configs": ["./configs"]
     }
   }
 }

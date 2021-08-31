@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const NavItem = ({ label, icon, to, handleClose, external }) => {
+const NavItem = ({ label, to, handleClose, external }) => {
   const classes = useStyles();
   const history = useHistory();
 

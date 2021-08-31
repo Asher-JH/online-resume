@@ -12,6 +12,13 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     margin: theme.spacing(0, 1),
     textDecoration: "none",
+    padding: theme.spacing(1),
+    borderRadius: 5,
+    transition: "0.2s ease",
+
+    "&:hover": {
+      background: THEME_COLORS.LIGHT_GREY,
+    },
   },
 }));
 
