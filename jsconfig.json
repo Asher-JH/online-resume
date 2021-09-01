@@ -6,7 +6,8 @@
       "@pages": ["./pages"],
       "@assets": ["./assets"],
       "@vars": ["./vars"],
-      "@configs": ["./configs"]
+      "@configs": ["./configs"],
+      "@data": ["./data"]
     }
   }
 }

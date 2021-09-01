@@ -13,6 +13,7 @@ const routes = () => {
     SOCIAL_LINKS: getRoute('social-links'),
     GALLERY: getRoute('gallery'),
     CONTACT: getRoute('contact'),
+    EDUCATION: getRoute('education'),
   };
 };
 

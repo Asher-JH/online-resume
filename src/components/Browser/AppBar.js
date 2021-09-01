@@ -60,7 +60,7 @@ const AppBar = ({ onClick }) => {
             <div className={classes.linksContainer}>
               <TextButton label="About" to={urls.PAGES.ABOUT_ME} />
               <TextButton label="Work" to={urls.PAGES.GALLERY} />
-              <TextButton label="Learning" to={urls.PAGES.SOCIAL_LINKS} />
+              <TextButton label="Education" to={urls.PAGES.EDUCATION} />
               <TextButton label="Contact" to={urls.PAGES.CONTACT} />
             </div>
           </Hidden>

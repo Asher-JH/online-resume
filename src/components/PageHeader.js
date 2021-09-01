@@ -1,10 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography, Divider } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginBottom: theme.spacing(3),
+    marginTop: theme.spacing(3),
   },
   primary: {
     fontWeight: "600",
@@ -19,15 +19,10 @@ const PageHeader = ({ primary, secondary }) => {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h3" className={classes.primary}>
+      <Typography variant="h4" gutterBottom className={classes.primary}>
         {primary}
       </Typography>
-      {!!secondary && <Typography variant="overline">{secondary}</Typography>}
-      <Divider
-        classes={{
-          root: classes.divider,
-        }}
-      />
+      {!!secondary && <Typography variant="p">{secondary}</Typography>}
     </div>
   );
 };

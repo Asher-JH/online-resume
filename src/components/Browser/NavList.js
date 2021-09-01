@@ -22,8 +22,8 @@ const items = [
     to: urls.PAGES.SOCIAL_LINKS,
   },
   {
-    label: "Learning",
-    to: urls.PAGES.GALLERY,
+    label: "Education",
+    to: urls.PAGES.EDUCATION,
   },
   {
     label: "Contact",

@@ -9,10 +9,11 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 
 import Browser from "@components/Browser";
 import LandingPage from "@pages/LandingPage";
-import AboutMe from "@pages/AboutMe";
+import AboutMe from "@pages/About";
 import SocialLinks from "@pages/SocialLinks";
 import Gallery from "@pages/Gallery";
 import Contact from "@pages/Contact";
+import Education from "@pages/Education";
 import urls from "@vars/urls";
 
 const RootRouter = () => {
@@ -30,6 +31,7 @@ const RootRouter = () => {
             />
             <Route exact path={urls.PAGES.GALLERY} component={Gallery} />
             <Route exact path={urls.PAGES.CONTACT} component={Contact} />
+            <Route exact path={urls.PAGES.EDUCATION} component={Education} />
             <Route render={() => <Redirect to={urls.PAGES.ABOUT_ME} />} />
           </Switch>
         </Suspense>
