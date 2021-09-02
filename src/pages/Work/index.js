@@ -10,7 +10,7 @@ import { useWorkExperienceData, useTestimonialData } from "@data/Work";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: theme.spacing(5),
+    margin: theme.spacing(5, 0),
     flexGrow: 1,
   },
   testimonialsContainer: {
@@ -41,7 +41,7 @@ const Work = () => {
       </div>
       <PageHeader
         primary="Referees"
-        secondary="Testimonials from past teachers & employers"
+        secondary="Testimonials from teachers & employers"
       />
       <div className={classes.testimonialsContainer}>
         {!!testimonials?.length &&

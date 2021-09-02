@@ -6,16 +6,14 @@ import { THEME_COLORS } from "vars/colors";
 const useStyles = makeStyles((theme) => ({
   button: {
     padding: theme.spacing(1.5),
-    background: THEME_COLORS.DARK_GREY,
+    background: THEME_COLORS.PRIMARY_BLACK,
     color: THEME_COLORS.WHITE,
-    border: `2px solid ${THEME_COLORS.DARK_GREY}`,
-    transition: ".5s ease",
+    border: `2px solid ${THEME_COLORS.PRIMARY_BLACK}`,
+    transition: ".3s ease",
 
     "&:hover": {
       boxShadow: "none",
-      background: `${THEME_COLORS.WHITE}`,
-      color: THEME_COLORS.PRIMARY_BLACK,
-      cursor: "pointer",
+      background: `${THEME_COLORS.PRIMARY_BLACK}90`,
     },
   },
 }));

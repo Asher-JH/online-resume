@@ -26,6 +26,14 @@ const items = [
     to: urls.PAGES.EDUCATION,
   },
   {
+    label: "Projects",
+    to: urls.PAGES.PROJECTS,
+  },
+  {
+    label: "Skills",
+    to: urls.PAGES.SKILLS,
+  },
+  {
     label: "Contact",
     to: urls.PAGES.CONTACT,
   },

@@ -1,7 +1,7 @@
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import FacebookIcon from '@material-ui/icons/Facebook';
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 import urls from "@vars/urls";
 
@@ -20,14 +20,19 @@ export const useExploreSections = () => [
     urlName: urls.PAGES.EDUCATION,
   },
   {
-    header: "My Tools",
-    subtitle: "All the technologies and productivity tools I use",
+    header: "Work Experience",
+    subtitle: "My previous and current work experience",
     urlName: urls.PAGES.WORK,
+  },
+  {
+    header: "Tools",
+    subtitle: "All the technologies and productivity tools I use",
+    urlName: urls.PAGES.SKILLS,
   },
   {
     header: "Projects",
     subtitle: "Past, present & future projects of mine",
-    urlName: urls.PAGES.WORK,
+    urlName: urls.PAGES.PROJECTS,
   },
   {
     header: "Contact",
