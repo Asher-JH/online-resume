@@ -8,6 +8,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import LaunchIcon from "@material-ui/icons/Launch";
+
 import { THEME_COLORS } from "vars/colors";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,19 +36,25 @@ const List = ({ dense, data }) => {
     return;
   };
 
+  // If no link provide, remove underline, icon & onClick
+
   return (
     <MuiList dense={dense} className={classes.root}>
       {!!data?.length ? (
         data.map(({ text, link }) => (
           <ListItem
             key={text}
-            onClick={() => onClick(link)}
-            className={classes.listItem}
+            {...(!!link
+              ? { onClick: () => onClick(link), className: classes.listItem }
+              : {})}
           >
             <ListItemIcon>
-              <LaunchIcon />
+              {!!link && <LaunchIcon fontSize="small" />}
             </ListItemIcon>
-            <ListItemText className={classes.listItemText} primary={text} />
+            <ListItemText
+              className={!!link ? classes.listItemText : {}}
+              primary={text}
+            />
           </ListItem>
         ))
       ) : (

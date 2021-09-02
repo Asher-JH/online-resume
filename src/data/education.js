@@ -3,6 +3,10 @@ import FSLogo from "@assets/fs-logo.png";
 import YTLogo from "@assets/youtube-logo.png";
 import UdemyLogo from "@assets/udemy-logo.png";
 
+
+/**
+ * Data for education cards
+ */
 export const useEducationData = () => [
   {
     duration: "2015-2019",
@@ -34,6 +38,9 @@ export const useEducationData = () => [
   },
 ];
 
+/**
+ * Data for recommended youtube channels
+ */
 export const useYoutubeChannels = () => [
   {
     text: "Traversy Media",
@@ -65,6 +72,9 @@ export const useYoutubeChannels = () => [
   },
 ];
 
+/**
+ * Data for learning resources I use
+ */
 export const useLearningResources = () => [
   {
     text: "MDN Web Docs",

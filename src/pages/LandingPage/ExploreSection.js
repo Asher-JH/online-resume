@@ -6,8 +6,7 @@ import { THEME_COLORS } from "vars/colors";
 import BasicContainer from "@components/BasicContainer";
 import SectionHeader from "@components/SectionHeader";
 import SectionCard from "@components/SectionCard";
-import userConfig from "@configs/user.json";
-import urls from "@vars/urls";
+import { useExploreSections } from "@data";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ExploreSection = () => {
   const classes = useStyles();
-  const sections = userConfig.explore.sections;
+  const sections = useExploreSections();
 
   return (
     <div className={classes.root}>
@@ -37,11 +36,7 @@ const ExploreSection = () => {
               sections.map(({ urlName, ...props }) => {
                 return (
                   <Grid key={urlName} item xs={12}>
-                    <SectionCard
-                      key={urlName}
-                      url={urls.PAGES[urlName]}
-                      {...props}
-                    />
+                    <SectionCard key={urlName} url={urlName} {...props} />
                   </Grid>
                 );
               })}

@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import BasicContainer from "@components/BasicContainer";
 import PageHeader from "@components/PageHeader";
 import EducationCard from "@components/EducationCard";
+import Quote from "@components/Quote";
 import List from "@components/List";
 import {
   useEducationData,
@@ -36,6 +37,10 @@ const Education = () => {
             <EducationCard key={educationProps.header} {...educationProps} />
           ))}
       </div>
+      <Quote
+        quote="Once you stop learning, you start dying."
+        author="Albert Einstein"
+      />
       <PageHeader
         primary="Youtube Channels"
         secondary="My go-to Youtube channels for learning. Most are recommended by friends, teachers and mentor."

@@ -5,19 +5,18 @@ import { TextField as MuiTextField, Typography } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    margin: theme.spacing(2, 0),
+    marginBottom: theme.spacing(4),
   },
-  input: {
-    background: "#fefefe",
-    border: "none",
+  label: {
+    fontWeight: 600,
   },
 }));
 
 const Input = withStyles({
   root: {
-    background: "#ededed",
+    background: "#fff",
     borderRadius: 5,
-    borderColor: "#ededed",
+    borderColor: "#000",
     borderWidth: 1,
 
     "& input:valid + fieldset": {
@@ -40,17 +39,19 @@ const TextField = ({
   name,
   multiline,
   rows,
+  required,
 }) => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography variant="subtitle1" className={classes.label}>
         {label}
       </Typography>
       <Input
         name={name}
-        variant="outlined"
+        required={required}
+        variant="standard"
         type={type}
         fullWidth
         multiline

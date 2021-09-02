@@ -10,7 +10,6 @@ const routes = () => {
   return {
     ROOT,
     ABOUT_ME: getRoute('about-me'),
-    SOCIAL_LINKS: getRoute('social-links'),
     GALLERY: getRoute('gallery'),
     CONTACT: getRoute('contact'),
     EDUCATION: getRoute('education'),
