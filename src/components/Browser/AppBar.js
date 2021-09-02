@@ -59,7 +59,7 @@ const AppBar = ({ onClick }) => {
           <Hidden smDown>
             <div className={classes.linksContainer}>
               <TextButton label="About" to={urls.PAGES.ABOUT_ME} />
-              <TextButton label="Work" to={urls.PAGES.GALLERY} />
+              <TextButton label="Work" to={urls.PAGES.WORK} />
               <TextButton label="Education" to={urls.PAGES.EDUCATION} />
               <TextButton label="Contact" to={urls.PAGES.CONTACT} />
             </div>

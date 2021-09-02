@@ -22,12 +22,12 @@ export const useExploreSections = () => [
   {
     header: "My Tools",
     subtitle: "All the technologies and productivity tools I use",
-    urlName: urls.PAGES.GALLERY,
+    urlName: urls.PAGES.WORK,
   },
   {
     header: "Projects",
     subtitle: "Past, present & future projects of mine",
-    urlName: urls.PAGES.GALLERY,
+    urlName: urls.PAGES.WORK,
   },
   {
     header: "Contact",
