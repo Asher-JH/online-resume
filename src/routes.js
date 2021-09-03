@@ -1,27 +1,26 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
 import Browser from "@components/Browser";
-import ContainerSkeleton from "@components/ContainerSkeleton";
+import LandingPage from "@pages/LandingPage";
+import AboutMe from "@pages/About";
+import Work from "@pages/Work";
+import Contact from "@pages/Contact";
+import Education from "@pages/Education";
+import Skills from "@pages/Skills";
 import urls from "@vars/urls";
-
-const LandingPage = lazy(() => import("@pages/LandingPage"));
-const AboutMe = lazy(() => import("@pages/About"));
-const Work = lazy(() => import("@pages/Work"));
-const Contact = lazy(() => import("@pages/Contact"));
-const Education = lazy(() => import("@pages/Education"));
-const Skills = lazy(() => import("@pages/Skills"));
 
 const RootRouter = () => {
   return (
     <Router>
       <Browser>
-        <Suspense fallback={<ContainerSkeleton />}>
+        <Suspense fallback={<LinearProgress />}>
           <Switch>
             <Route exact path={urls.ROOT} component={LandingPage} />
             <Route exact path={urls.PAGES.ABOUT_ME} component={AboutMe} />
