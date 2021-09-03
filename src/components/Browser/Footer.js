@@ -41,8 +41,9 @@ const Footer = () => {
       </Hidden>
       <div className={classes.container}>
         {!!data?.length &&
-          data.map(({ icon, url }) => (
+          data.map(({ icon, url, text }) => (
             <IconButton
+              aria-label={text}
               key={url}
               className={classes.icon}
               onClick={() => onClick(url)}

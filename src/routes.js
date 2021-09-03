@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,14 +7,14 @@ import {
 } from "react-router-dom";
 import LinearProgress from "@material-ui/core/LinearProgress";
 
-import Browser from "@components/Browser";
-import LandingPage from "@pages/LandingPage";
-import AboutMe from "@pages/About";
-import Work from "@pages/Work";
-import Contact from "@pages/Contact";
-import Education from "@pages/Education";
-import Skills from "@pages/Skills";
-import urls from "@vars/urls";
+const Browser = lazy(() => import("@components/Browser"));
+const LandingPage = lazy(() => import("@pages/LandingPage"));
+const AboutMe = lazy(() => import("@pages/About"));
+const Work = lazy(() => import("@pages/Work"));
+const Contact = lazy(() => import("@pages/Contact"));
+const Education = lazy(() => import("@pages/Education"));
+const Skills = lazy(() => import("@pages/Skills"));
+const urls = lazy(() => import("@vars/urls"));
 
 const RootRouter = () => {
   return (
