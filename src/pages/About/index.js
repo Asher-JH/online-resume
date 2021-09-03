@@ -5,6 +5,7 @@ import BasicContainer from "@components/BasicContainer";
 import PageHeader from "@components/PageHeader";
 import Accordion from "@components/Accordion";
 import List from "@components/List";
+import Map from "@components/Map";
 import { useAboutMeData, useTechData, useTopicsData } from "@data/about";
 
 const useStyles = makeStyles((theme) => ({
@@ -47,6 +48,10 @@ const AboutMe = () => {
       />
       <div className={classes.topicsContainer}>
         <List data={topicsData} />
+      </div>
+      <PageHeader primary="Hometown" secondary="Georgetown" />
+      <div className={classes.container}>
+        <Map height="500px" latitude={5.4141} longitude={100.3288} />
       </div>
     </BasicContainer>
   );
