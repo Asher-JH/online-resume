@@ -45,7 +45,7 @@ const Quote = ({ quote, author }) => {
     setLiked(!liked);
     // Update count
     await query.set({
-      count: doc.count + 1,
+      count: !liked ? doc.count + 1 : doc.count - 1,
     });
   };
 
