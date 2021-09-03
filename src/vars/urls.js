@@ -13,7 +13,6 @@ const routes = () => {
     WORK: getRoute("work"),
     CONTACT: getRoute("contact"),
     EDUCATION: getRoute("education"),
-    PROJECTS: getRoute("projects"),
     SKILLS: getRoute("skills"),
   };
 };

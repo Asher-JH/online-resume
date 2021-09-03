@@ -13,7 +13,6 @@ import AboutMe from "@pages/About";
 import Work from "@pages/Work";
 import Contact from "@pages/Contact";
 import Education from "@pages/Education";
-import Projects from "@pages/Projects";
 import Skills from "@pages/Skills";
 import urls from "@vars/urls";
 
@@ -28,7 +27,6 @@ const RootRouter = () => {
             <Route exact path={urls.PAGES.WORK} component={Work} />
             <Route exact path={urls.PAGES.CONTACT} component={Contact} />
             <Route exact path={urls.PAGES.EDUCATION} component={Education} />
-            <Route exact path={urls.PAGES.PROJECTS} component={Projects} />
             <Route exact path={urls.PAGES.SKILLS} component={Skills} />
             <Route render={() => <Redirect to={urls.PAGES.ABOUT_ME} />} />
           </Switch>

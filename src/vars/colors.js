@@ -14,7 +14,7 @@ export const THEME_COLORS = {
   TS: "#3178C6",
   JS: "#F7DF1E",
   JAVA: "#007396",
-  MUI: "##0081CB",
+  MUI: "#0081CB",
   PYTHON: "#3776AB",
   BOOTSTRAP: "#7952B3",
   NEXT: "#000000",

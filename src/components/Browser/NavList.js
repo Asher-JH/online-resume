@@ -19,15 +19,11 @@ const items = [
   },
   {
     label: "Work",
-    to: urls.PAGES.SOCIAL_LINKS,
+    to: urls.PAGES.WORK,
   },
   {
     label: "Education",
     to: urls.PAGES.EDUCATION,
-  },
-  {
-    label: "Projects",
-    to: urls.PAGES.PROJECTS,
   },
   {
     label: "Skills",

@@ -32,7 +32,7 @@ const WorkCard = ({ duration, location, role, tasks }) => {
       <Typography variant="h5" className={classes.location}>
         {location}
       </Typography>
-      <Typography variant="p" gutterBottom>
+      <Typography variant="subtitle2" gutterBottom>
         {role}
       </Typography>
       <List dense className={classes.list}>

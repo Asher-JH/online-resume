@@ -22,7 +22,7 @@ const PageHeader = ({ primary, secondary }) => {
       <Typography variant="h4" gutterBottom className={classes.primary}>
         {primary}
       </Typography>
-      {!!secondary && <Typography variant="p">{secondary}</Typography>}
+      {!!secondary && <Typography variant="subtitle2">{secondary}</Typography>}
     </div>
   );
 };

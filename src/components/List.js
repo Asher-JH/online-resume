@@ -8,6 +8,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import LaunchIcon from "@material-ui/icons/Launch";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 
 import { THEME_COLORS } from "vars/colors";
 
@@ -49,10 +50,14 @@ const List = ({ dense, data }) => {
               : {})}
           >
             <ListItemIcon>
-              {!!link && <LaunchIcon fontSize="small" />}
+              {!!link ? (
+                <LaunchIcon fontSize="small" />
+              ) : (
+                <FiberManualRecordIcon color="inherit" fontSize="small" />
+              )}
             </ListItemIcon>
             <ListItemText
-              className={!!link ? classes.listItemText : {}}
+              className={!!link ? classes.listItemText : ""}
               primary={text}
             />
           </ListItem>

@@ -1,17 +1,9 @@
 import React from "react";
-import {
-  Container,
-  Typography,
-  IconButton as MuiIconButton,
-  Hidden,
-} from "@material-ui/core";
+import { Container, Typography, IconButton, Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 import { THEME_COLORS } from "@vars/colors";
-import user from "@configs/user.json";
+import { useSocialLinks } from "@data";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,33 +22,16 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "start",
   },
+  icon: {
+    fontSize: "10px",
+  },
 }));
-
-const IconButton = ({ iconName }) => {
-  let icon;
-
-  const onClick = () => window.open(user.links[iconName], "_blank");
-
-  switch (iconName.toString()) {
-    case "github":
-      icon = <GitHubIcon fontSize="small" />;
-      break;
-    case "instagram":
-      icon = <InstagramIcon fontSize="small" />;
-      break;
-    case "linkedIn":
-      icon = <LinkedInIcon fontSize="small" />;
-      break;
-    default:
-      icon = <GitHubIcon fontSize="small" />;
-      break;
-  }
-
-  return <MuiIconButton onClick={onClick}>{icon}</MuiIconButton>;
-};
 
 const Footer = () => {
   const classes = useStyles();
+  const data = useSocialLinks({ smallIcons: true });
+
+  const onClick = (url) => window.open(url, "_blank");
 
   return (
     <Container maxWidth="md" className={classes.root}>
@@ -65,9 +40,16 @@ const Footer = () => {
         <Typography className={classes.text}>v1.0.0</Typography>
       </Hidden>
       <div className={classes.container}>
-        <IconButton iconName="github" />
-        <IconButton iconName="instagram" />
-        <IconButton iconName="linkedIn" />
+        {!!data?.length &&
+          data.map(({ icon, url }) => (
+            <IconButton
+              key={url}
+              className={classes.icon}
+              onClick={() => onClick(url)}
+            >
+              {icon}
+            </IconButton>
+          ))}
       </div>
     </Container>
   );

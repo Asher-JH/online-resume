@@ -30,11 +30,6 @@ export const useExploreSections = () => [
     urlName: urls.PAGES.SKILLS,
   },
   {
-    header: "Projects",
-    subtitle: "Past, present & future projects of mine",
-    urlName: urls.PAGES.PROJECTS,
-  },
-  {
     header: "Contact",
     subtitle: "Click here to get in touch with me",
     urlName: urls.PAGES.CONTACT,
@@ -44,25 +39,31 @@ export const useExploreSections = () => [
 /**
  *  Get data for social buttons
  */
-export const useSocialLinks = () => [
-  {
-    icon: <GitHubIcon />,
-    text: "GitHub",
-    url: "https://github.com/Asher-JH",
-  },
-  {
-    icon: <InstagramIcon />,
-    text: "Instagram",
-    url: "https://www.instagram.com/_asherrrr_/",
-  },
-  {
-    icon: <LinkedInIcon />,
-    text: "LinkedIn",
-    url: "https://www.linkedin.com/in/asher-chan-b667531a6/",
-  },
-  {
-    icon: <FacebookIcon />,
-    text: "Facebook",
-    url: "https://www.facebook.com/profile.php?id=100010050316134",
-  },
-];
+export const useSocialLinks = ({ smallIcons }) => {
+  const props = {
+    ...(!!smallIcons ? { fontSize: "small" } : {}),
+  };
+
+  return [
+    {
+      icon: <GitHubIcon {...props} />,
+      text: "GitHub",
+      url: "https://github.com/Asher-JH",
+    },
+    {
+      icon: <InstagramIcon {...props} />,
+      text: "Instagram",
+      url: "https://www.instagram.com/_asherrrr_/",
+    },
+    {
+      icon: <LinkedInIcon {...props} />,
+      text: "LinkedIn",
+      url: "https://www.linkedin.com/in/asher-chan-b667531a6/",
+    },
+    {
+      icon: <FacebookIcon {...props} />,
+      text: "Facebook",
+      url: "https://www.facebook.com/profile.php?id=100010050316134",
+    },
+  ];
+};

@@ -54,10 +54,10 @@ const SectionCard = ({ header, subtitle, url }) => {
   return (
     <Paper component={Link} to={url} elevation={0} className={classes.root}>
       <div className={classes.textContainer}>
-        <Typography variant="overline" className={classes.title}>
+        <Typography variant="h5" className={classes.content}>
           {header}
         </Typography>
-        <Typography variant="h5" className={classes.content}>
+        <Typography variant="subtitle2" className={classes.title}>
           {subtitle}
         </Typography>
       </div>

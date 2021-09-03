@@ -61,14 +61,12 @@ const AppBar = ({ onClick }) => {
               <TextButton label="About" to={urls.PAGES.ABOUT_ME} />
               <TextButton label="Work" to={urls.PAGES.WORK} />
               <TextButton label="Education" to={urls.PAGES.EDUCATION} />
-              <TextButton label="Projects" to={urls.PAGES.PROJECTS} />
               <TextButton label="Skills" to={urls.PAGES.SKILLS} />
               <TextButton label="Contact" to={urls.PAGES.CONTACT} />
             </div>
           </Hidden>
           <Hidden mdUp className={classes.iconContainer}>
             <IconButton
-              color={THEME_COLORS.PRIMARY_BLACK}
               onClick={onClick}
               aria-label="open drawer"
               edge="start"

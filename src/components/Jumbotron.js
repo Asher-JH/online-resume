@@ -72,7 +72,7 @@ const Jumbotron = ({
         <div className={classes.image} />
       </Paper>
       <div className={classes.textContainer}>
-        <Typography variant="p" gutterBottom className={classes.minorText}>
+        <Typography variant="subtitle2" gutterBottom className={classes.minorText}>
           {secondaryText}
         </Typography>
         {!!primaryElement ? (

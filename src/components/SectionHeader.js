@@ -24,7 +24,7 @@ const SectionHeader = ({ primaryText, secondaryText }) => {
       <Typography variant="h5" gutterBottom className={classes.primaryText}>
         {primaryText}
       </Typography>
-      <Typography variant="p" className={classes.secondaryText}>
+      <Typography variant="subtitle2" className={classes.secondaryText}>
         {secondaryText}
       </Typography>
     </div>

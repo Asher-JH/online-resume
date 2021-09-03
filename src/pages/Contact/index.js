@@ -11,13 +11,13 @@ import { useSocialLinks } from "@data";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginTop: theme.spacing(4)
+    marginTop: theme.spacing(4),
   },
 }));
 
 const Contact = () => {
   const classes = useStyles();
-  const socialLinks = useSocialLinks();
+  const socialLinks = useSocialLinks({ smallIcons: false });
 
   return (
     <BasicContainer>

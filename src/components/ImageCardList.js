@@ -26,8 +26,8 @@ const ImageCardList = ({ data }) => {
       <Grid container spacing={4}>
         {!!data?.length &&
           data.map((item) => (
-            <Grid item xs={6} sm={3}>
-              <ImageCard key={item.text} {...item} />
+            <Grid key={item.text} item xs={6} sm={3}>
+              <ImageCard {...item} />
             </Grid>
           ))}
       </Grid>

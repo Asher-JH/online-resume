@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Drawer as MuiDrawer,
@@ -9,6 +10,7 @@ import {
 import CloseIcon from "@material-ui/icons/Close";
 
 import { THEME_COLORS } from "@vars/colors";
+import urls from "@vars/urls";
 
 import NavList from "./NavList";
 
@@ -37,6 +39,12 @@ const useStyles = makeStyles((theme) => ({
 
 const Drawer = ({ open, onClose }) => {
   const classes = useStyles();
+  const history = useHistory();
+
+  const onClick = () => {
+    onClose();
+    history.push(urls.ROOT);
+  };
 
   return (
     <MuiDrawer
@@ -49,9 +57,11 @@ const Drawer = ({ open, onClose }) => {
       }}
     >
       <Toolbar className={classes.toolbar}>
-        <Typography className={classes.title}>Asher Chan</Typography>
+        <Typography onClick={onClick} className={classes.title}>
+          Asher Chan
+        </Typography>
         <IconButton
-          color={THEME_COLORS.PRIMARY_BLACK}
+          color="inherit"
           onClick={onClose}
           aria-label="open drawer"
           edge="end"

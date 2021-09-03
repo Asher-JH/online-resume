@@ -52,7 +52,7 @@ const EducationCard = ({ duration, header, subtitle, img }) => {
         <Typography variant="h6" gutterBottom className={classes.title}>
           {header}
         </Typography>
-        <Typography variant="p">
+        <Typography variant="subtitle2">
           {subtitle}
         </Typography>
       </div>
