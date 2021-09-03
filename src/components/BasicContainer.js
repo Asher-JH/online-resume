@@ -1,11 +1,13 @@
 import React from "react";
 import { CssBaseline, Container } from "@material-ui/core";
 
-const BasicContainer = ({ children }) => {
+const BasicContainer = ({ children, className }) => {
   return (
     <>
       <CssBaseline />
-      <Container maxWidth="md">{children}</Container>
+      <Container maxWidth="md" className={className}>
+        {children}
+      </Container>
     </>
   );
 };
