@@ -2,9 +2,10 @@
 
 This project uses 
 - React JS
-- React-router-dom
 - Material-ui
-- Craco for import aliases
+- PWA ready
+- Firebase for hosting
+- Firestore for realtime updates of the like count on education page
 
 Run:
 1. `npm install`
