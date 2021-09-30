@@ -1,4 +1,4 @@
-# Online Resume
+# Online Resume for class project
 
 This project uses 
 - React JS
