@@ -6,7 +6,7 @@ import BasicContainer from "@components/BasicContainer";
 import PageHeader from "@components/PageHeader";
 import WorkCard from "@components/WorkCard";
 import Testimonial from "@components/Testimonial";
-import { useWorkExperienceData, useTestimonialData } from "@data/Work";
+import { useWorkExperienceData, useTestimonialData } from "@data/work";
 
 const useStyles = makeStyles((theme) => ({
   container: {

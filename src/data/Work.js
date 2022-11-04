@@ -91,10 +91,8 @@ export const useWorkExperienceData = () => [
       "Fullstack development",
       "Use technologies such as TypeScript, NextJS, tRPC, mySQL, Prisma etc...",
       "Dabble in some devops",
-      "Try out new technologies that could be implemented in our projects",
+      "Try out new things that could be implemented in our projects",
       "Take part in daily standups & discussions",
-      "Participate in code reviews",
-      "...more to come",
     ],
   },
 ];
