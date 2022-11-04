@@ -13,7 +13,7 @@ export const useWorkExperienceData = () => [
     ],
   },
   {
-    duration: "Nov 2019- Dec  2019",
+    duration: "Nov 2019- Dec 2019",
     location: "Popular Book Fair",
     role: "Retail assistant",
     tasks: [
@@ -72,7 +72,7 @@ export const useWorkExperienceData = () => [
     ],
   },
   {
-    duration: "Apr 2021- Now",
+    duration: "Apr 2021- Feb 2022",
     location: "White Room",
     role: "Part-time",
     tasks: [
@@ -80,6 +80,19 @@ export const useWorkExperienceData = () => [
       "Helped in the development of a user-friendly web app",
       "Worked on adding features",
       "Implemented a website & API health checker using Google Cloud Functions",
+      "Participate in code reviews",
+    ],
+  },
+  {
+    duration: "Feb 2022- Now",
+    location: "White Room",
+    role: "Jr Software Engineer",
+    tasks: [
+      "Fullstack development",
+      "Use technologies such as TypeScript, NextJS, tRPC, mySQL, Prisma etc...",
+      "Dabble in some devops",
+      "Try out new technologies that could be implemented in our projects",
+      "Take part in daily standups & discussions",
       "Participate in code reviews",
       "...more to come",
     ],

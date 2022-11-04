@@ -5,12 +5,12 @@ export const useAboutMeData = () => [
   {
     summary: "Short Biography",
     details:
-      "I'm 19, born and raised in Pulau Pinang Malaysia. I'm of mixed blood, my father is Chinese & my mother is British. I have a passion for learning new things and building modern clean looking apps.",
+      "I'm 20, born and raised in Pulau Pinang Malaysia. I'm of mixed blood, my father is Chinese & my mother is British. I have a passion for learning new things and building modern clean looking apps.",
   },
   {
     summary: "Career Summary",
     details:
-      "I'm currently a student studying Software Engineering. At the same time I've had the amazing opportunity to work part-time as a Junior Software Engineer @ White Room. My main interest is Fullstack web development but I've started taking an interest in UI/UX.",
+      "I'm currently working as a Jr Software Engineer @ White Room. My main interest is Fullstack web development but I've started taking an interest in devops, learning things like Docker k8s",
   },
   {
     summary: "Career Goals",
@@ -20,7 +20,7 @@ export const useAboutMeData = () => [
   {
     summary: "Philosophy Statement",
     details:
-      "Firstly, keep on learning. Secondly, try and implement clean code principles whenever you can, you will thank yourself when your reading code you wrote months before.",
+      "You don't know if you don't even try, so never give up without trying.",
   },
 ];
 
@@ -29,16 +29,16 @@ export const useAboutMeData = () => [
  */
 export const useTechData = () => [
   {
-    text: "Fronted Development",
+    text: "Frontend Development",
   },
   {
     text: "Backend Development",
   },
   {
-    text: "UI / UX",
+    text: "t3 Stack",
   },
   {
-    text: "Data Structures & Algorithms",
+    text: "Docker & k8s",
   },
   {
     text: "Clean code principles",
